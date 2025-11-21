@@ -2,6 +2,7 @@
   /* Tweak this to match your exact blue */
   --hitac-blue-header: #20499a;
 }
+
 /* Full-width blue bar */
 .hitac-header {
   background: var(--hitac-blue-header);
@@ -65,19 +66,7 @@
 .hero-video {
   flex: 2;
   min-width: 0;           /* prevents overflow */
-}
-
-
-.hero-side-image {
-  flex: 1;
-  min-width: 0;
-}
-
-.hero-side-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* crop image nicely */
-  display: block;
+  height: 100%;           /* <<< FORCE same height as hero-top */
 }
 
 .video-wrapper {
@@ -95,6 +84,19 @@
   border: 0;
 }
 
+/* Right side: image fills its half */
+.hero-side-image {
+  flex: 1;
+  min-width: 0;
+  height: 100%;           /* <<< MATCH hero-top height */
+}
+
+.hero-side-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* crop image nicely */
+  display: block;
+}
 
 /* bottom tiles grid */
 .hero-bottom {
@@ -199,6 +201,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 @media (max-width: 768px) {
   .hero-top {
     flex-direction: column;
@@ -213,4 +216,3 @@
     height: 240px;
   }
 }
-

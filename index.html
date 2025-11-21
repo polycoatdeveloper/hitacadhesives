@@ -3,355 +3,256 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Molecular Processing - Custom Chemical Processor</title>
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,600,700,900%7CRaleway:500">
-  <link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/fonts.css">
+  <title>HITAC Adhesives | High Performance Adhesive Solutions</title>
+
+  <meta name="description" content="HITAC Adhesives provides high performance adhesive technologies for industrial, construction, automotive, and specialty applications.">
+
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="css/novi.css">
-  <style>
-section.brands {
-      width: 85%;
-      margin: 0 auto;
-      padding: 40px 0;
-      border-bottom: 1px solid #0A9143;
-      text-align: center;
-    }
-    .tooltip-container {
-     display: flex;
-	  justify-content: center;   /* center horizontally */
-	  align-items: center;       /* center vertically if needed */
-	  position: relative;
-      margin-top: 30px;
-    }
-    .hover-text {
-      position: relative;
-      cursor: pointer;
-      color: #1c75bc;
-      display: inline-block;
-      font-size: 18px;
-      font-weight: 600;
-      
-    }
-    .tooltip-text {
-      visibility: hidden;
-      opacity: 0;
-      width: 300px; /* adjust width as needed */
-      background-color: #1c75bc;
-      color: white;
-      text-align: center;
-      border-radius: 5px;
-      padding: 8px;
-      position: absolute;
-      z-index: 1000;
-      top: 125%;      /* display below the hover text */
-      left: 50%;
-      transform: translateX(-50%);
-      transition: opacity 0.3s ease;
-    }
-    .hover-text:hover .tooltip-text {
-      visibility: visible;
-      opacity: 1;
-    }
-p.rights a:hover{
-    color:white;
-  }
-  .footeraddy{
-    font-size:13px;
-    text-align:center;
-    color:#3d3d3d;
-    font-weight:400;
-    letter-spacing:.1px;
-  }
-  .apnbadge {
-    position:relative;
-    top:-30px;
-  }
-  .apnbadge img{
-    display:block;
-    margin:auto;
-  }
-@media (min-width: 768px) {
-
-  .apnbadge {
-    margin-top:40px;
-  }
-}
-  @media only screen 
-  and (min-device-width : 320px) 
-  and (max-device-width : 480px) {
-  .apnbadge{
-    margin-top:-50px !important;
-    padding-left:10px;
-  }
-  }
-  h6.footer-classic-title{
-    color:#000;
-  }
-  .footer-classic-list a{
-    color:#000;
-  }
-       .family-owned {
-   
-    width:100%;
-    height:550px !important;
-    background-image: url('images/familybg.png');
-    background-size:cover;
-    background-repeat:no-repeat;
-    color:#000;
-    font-weight:600;
-  }
-  span.a {
-    display: inline; /* the default for span */
-    width:60%;
-    margin: 0 auto;
-    padding: 5px;
-    
-  }
-  .famicons{
-    width: 60% !important;
-    margin:0 auto;
-  }
-  </style>
-  <!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPYTJMNVBL"></script>
-	<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-QPYTJMNVBL');
-</script>
-	<style type="text/css">
-/* a {
-color: black;
-} */
-
-.tagline{
-  width:90%;
-}
-
-.icon::before{
-  color:#0A9143 !important;
-}
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-  position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
- 
- 
-}
-
-/* Add some content at the bottom of the video/page */
-.content {
-  position: relative   ;
-  top:0 ;
-  left:0; 
-  background:#fff;
-  color: #f1f1f1;
-  width:100%;
-  text-align:center;
-  padding-top: 20px;
-  padding-bottom:30px;
-  text-align:left;
-  overflow:hidden;
-}
-.content h4{
-  color:#023f6c;
-  font-weight:700;
-  font-size:2.9em;  
-  padding-top:20px;
-}
-.content h5{
-  padding-top:20px;
-  color:#000;
-  font-size:1.2em;
-  line-height:1.5em;
-  text-transform:capitalize;
-}
-
-
-
-.rd-form-inline-lg .button{
-  margin-left:30%;
-}
-
-.footer-classic-3 {
-  background-image: url(../images/bg-footer-1.png) !important;
-}
-.orangered-bdr {
-    border: 1px solid #0aff00;
-    color: #fff;
-	background: #000;
-	border-right: 1px solid #0aff00 !important;
-}
-.cookie-consent-container {
-position: fixed;
-bottom: 0;
-width: 100%;
-z-index: 1000; /* Ensure it appears above other content */
-}
-		
-.btn {
-    display: inline-block;
-    font-weight: 900;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 10px 45px;
-    font-size: 15px;
-    line-height: 1.85;
-    border-radius: 0;
-    transition: all 0.15s ease-in-out;
-    background: #fff;
-}
-		
-		
-		
-		
-.covid19 {
-	width: 100%;
-	display: table;
-	background: #e80000;
-	text-align: center;
-	padding: 8px 0;
-	font-size: 18px;
-}
-.covid19 a {
-	color: #fff;
-}
-.box-icon-classic-title a:hover {
-	color: #0A9143;
-}
-.box-icon-classic-icon {
-	background: #ffffff;
-	color: #0A9143;
-	animation: none;
-}
-.counter-classic-decor {
-	display: none;
-}
-.services-creative-counter {
-	background: linear-gradient(to top, #0A9143 0%, #0A9143 100%);
-}
-#ui-to-top {
-	background: #0A9143;
-	color: #ffffff;
-	border-color: #0A9143;
-}
-.list-share-2 .icon:hover {
-	color: #0A9143;
-}
-.rd-navbar-static .rd-megamenu-list li > a:hover {
-	color: #0A9143;
-}
-.rd-navbar-static .rd-megamenu-list li > a::before {
-	color: #0A9143;
-}
-.rd-navbar-contacts-2 .icon {
-	color: #0A9143;
-}
-.rd-navbar-contacts-2 a:hover {
-	color: #0A9143;
-}
-.rd-navbar-static .rd-navbar-dropdown {
-	border-bottom: 7px solid #0A9143;
-}
-.rd-navbar-static .rd-nav-link::before {
-	background: #0A9143;
-}
-.footer-social-list .icon::after {
-	background: #0A9143;
-}
-.footer-classic-list a:hover {
-	color: #0A9143;
-}
-.footer-classic-contacts a:hover {
-	color: #0A9143;
-}
-
-p.rights{
-  color:#000 !important;
-  text-align:center !important;
-}
-p.rights a:hover {
-	color: #0A9143;
-}
-
-@media (min-width: 768px) {
-.footer-classic-panel {
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-}
-	
-</style>
 </head>
 <body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- Replace with your logo image if you have one -->
+        <a href="#top">HITAC<span>Adhesives</span></a>
+      </div>
 
-  <!-- ========== Header / Navigation ========== -->
-  <div id="header-placeholder"></div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        ☰
+      </button>
 
-  <script>
-    fetch('header.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-      });
-  </script>
+      <nav class="main-nav" id="mainNav">
+        <a href="#solutions">Solutions</a>
+        <a href="#industries">Industries</a>
+        <a href="#technology">Technology</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn-nav">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <!-- ========== Hero Section ========== -->
-  <section id="hero" class="hero-section">
-	<div class="container">
-      <h1>Molecular Processing LLC</h1>
-      <p>
-        Custom chemical and specialty products processor<br />
-        <strong>Address:</strong> 847 Blacksnake Rd, Hot Springs, AR 71913
-      </p>
-      
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>High-Performance Adhesive Systems for Demanding Applications</h1>
+        <p>
+          HITAC Adhesives delivers specialized adhesive technologies designed
+          to improve productivity, durability, and performance across a wide
+          range of industries.
+        </p>
+        <div class="hero-actions">
+          <a href="#solutions" class="btn primary">Explore Solutions</a>
+          <a href="#contact" class="btn secondary">Request Technical Support</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <!-- Replace with a real image in /assets if you like -->
+        <div class="hero-placeholder">
+          <span>Product Image / Graphic</span>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- ========== About Section ========== -->
-  <section id="about" class="about-section">
+  <!-- Solutions -->
+  <section class="section" id="solutions">
     <div class="container">
-  <h2><a href="about-us.html" class="about-link">Our Mission</a></h2>
-  <p>
-    Molecular Processing, LLC — part of the trusted Polycoat / American Polymers family — brings decades of chemical manufacturing excellence to Hot Springs, Arkansas.
-  </p>
-</div>
+      <h2 class="section-title">Adhesive Solutions</h2>
+      <p class="section-intro">
+        From structural bonding to flexible laminating systems, HITAC
+        Adhesives provides tailored solutions for your specific performance
+        and processing requirements.
+      </p>
 
+      <div class="card-grid">
+        <article class="card">
+          <h3>Structural Adhesives</h3>
+          <p>
+            High-strength systems engineered for demanding mechanical
+            performance, impact resistance, and long-term durability.
+          </p>
+          <ul>
+            <li>Metal, composite, and engineered substrate bonding</li>
+            <li>Excellent shear and peel strength</li>
+            <li>Optimized cure profiles for your process</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Laminating & Packaging</h3>
+          <p>
+            Flexible laminating adhesives designed for converters and
+            packaging applications requiring clarity, flexibility, and
+            chemical resistance.
+          </p>
+          <ul>
+            <li>Solvent-based and solvent-free technologies</li>
+            <li>Food and industrial packaging</li>
+            <li>Fast line speeds and strong bonds</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Construction & Building</h3>
+          <p>
+            High-performance adhesives for panel bonding, flooring,
+            insulation, and envelope systems.
+          </p>
+          <ul>
+            <li>Weather and moisture resistant</li>
+            <li>Compatible with a range of substrates</li>
+            <li>Low VOC and specialty formulations</li>
+          </ul>
+        </article>
+      </div>
+    </div>
   </section>
 
-  <!---Family of Brands-->
-<div id="brands-section-placeholder"></div>
+  <!-- Industries -->
+  <section class="section section-alt" id="industries">
+    <div class="container">
+      <h2 class="section-title">Industries We Serve</h2>
 
-<script>
-  fetch('familyofbrands.html')
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById('brands-section-placeholder').innerHTML = data;
-    });
-</script>
+      <div class="pill-row">
+        <span class="pill">Automotive & Transportation</span>
+        <span class="pill">Industrial & OEM</span>
+        <span class="pill">Construction & Building Envelope</span>
+        <span class="pill">Packaging & Converting</span>
+        <span class="pill">Specialty Applications</span>
+      </div>
 
-<!---Family of Brands-->
+      <div class="two-column">
+        <div>
+          <p>
+            Our team partners with engineers, converters, and production
+            teams to specify adhesive systems that integrate smoothly into
+            your current processes while unlocking performance improvements.
+          </p>
+        </div>
+        <div>
+          <p>
+            Whether you need high-temperature resistance, low-temperature
+            flexibility, chemical resistance, or rapid throughput, HITAC
+            Adhesives can help design a solution that fits.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
-<div class="snackbars" id="form-output-global"></div>
-<div id="footer-placeholder"></div>
+  <!-- Technology -->
+  <section class="section" id="technology">
+    <div class="container">
+      <h2 class="section-title">Technology & Support</h2>
 
-  <script>
-    fetch('footer.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      });
-  </script>
-<script src="js/core.min.js"></script><script src="js/script.js"></script>
+      <div class="two-column">
+        <div>
+          <h3>Formulation Expertise</h3>
+          <p>
+            HITAC combines polymer chemistry, application engineering, and
+            process know-how to develop adhesive systems that perform in
+            real-world conditions, not just the lab.
+          </p>
+          <p>
+            We support customers from early formulation selection through
+            scale-up, qualification, and ongoing optimization.
+          </p>
+        </div>
+        <div>
+          <h3>Application Development</h3>
+          <ul class="icon-list">
+            <li>Substrate evaluation and surface prep recommendations</li>
+            <li>Line trials and cure schedule optimization</li>
+            <li>Custom testing based on your specification</li>
+            <li>On-site or remote technical support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <h2 class="section-title">About HITAC Adhesives</h2>
+      <div class="two-column">
+        <div>
+          <p>
+            HITAC Adhesives focuses on high-value adhesive technologies
+            backed by responsive technical support and reliable supply. Our
+            products are designed to integrate cleanly into modern
+            manufacturing environments and help customers innovate with
+            confidence.
+          </p>
+        </div>
+        <div>
+          <p>
+            We work closely with partners across North America to deliver
+            consistent performance, predictable lead times, and
+            application-specific guidance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact HITAC Adhesives</h2>
+      <p class="section-intro">
+        Tell us about your application, performance targets, and processing
+        conditions. Our team will recommend a starting point formulation or
+        help develop a custom solution.
+      </p>
+
+      <div class="contact-layout">
+        <form class="contact-form" netlify>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" />
+          </div>
+          <div class="form-row">
+            <label for="message">Project / Application Details</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn primary">Submit</button>
+        </form>
+
+        <div class="contact-info">
+          <h3>Direct Contact</h3>
+          <p><strong>Website:</strong> <a href="https://hitacadhesives.com" target="_blank" rel="noopener">hitacadhesives.com</a></p>
+          <p><strong>Email:</strong> <a href="mailto:info@hitacadhesives.com">info@hitacadhesives.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+10000000000">+1 (000) 000-0000</a></p>
+          <p class="small">
+            Update the email, phone, and address above to match your real
+            contact information.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> HITAC Adhesives. All rights reserved.</p>
+      <p class="footer-links">
+        <a href="#top">Back to top</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>

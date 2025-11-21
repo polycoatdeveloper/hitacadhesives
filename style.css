@@ -57,31 +57,34 @@
 /* top row: video + right image */
 .hero-top {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  height: 420px;          /* adjust: 380–450px to taste */
 }
 
+/* Left side: video fills its half */
 .hero-video {
   flex: 2;
-  min-width: 280px;
+  min-width: 0;           /* prevents overflow */
 }
+
 
 .hero-side-image {
   flex: 1;
-  min-width: 260px;
+  min-width: 0;
 }
 
 .hero-side-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover;      /* crop image nicely */
   display: block;
 }
 
-/* 16:9 responsive video */
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 */
+  height: 100%;           /* fill the full 420px height */
+  padding-top: 0;         /* REMOVE the old 56.25% padding */
 }
 
 .video-wrapper iframe {
@@ -91,6 +94,7 @@
   height: 100%;
   border: 0;
 }
+
 
 /* bottom tiles grid */
 .hero-bottom {
@@ -193,6 +197,20 @@
 @media (max-width: 480px) {
   .hero-bottom {
     grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .hero-top {
+    flex-direction: column;
+    height: auto;         /* let it stack naturally on mobile */
+  }
+
+  .video-wrapper {
+    height: 240px;        /* smaller video on mobile */
+  }
+
+  .hero-side-image {
+    height: 240px;
   }
 }
 

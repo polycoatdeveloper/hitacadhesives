@@ -1,11 +1,51 @@
 :root {
-  /* Approximate Hitac-style palette – adjust if you know the exact codes */
-  --hitac-blue: #0056a6;
-  --hitac-blue-light: #0096d6;
-  --hitac-dark: #22303c;
-  --hitac-gray: #4f5a64;
-  --hitac-bg: #f5f6f8;
-  --hitac-white: #ffffff;
+  /* Tweak this to match your exact blue */
+  --hitac-blue-header: #20499a;
+}
+/* Full-width blue bar */
+.hitac-header {
+  background: var(--hitac-blue-header);
+}
+
+/* Inner flex layout */
+.hitac-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo */
+.hitac-logo-wrap {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.hitac-logo {
+  height: 52px;          /* adjust to taste */
+  width: auto;
+}
+
+/* Navigation links */
+.hitac-nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly; /* spreads links across bar */
+}
+
+.hitac-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+
+.hitac-nav a:hover {
+  text-decoration: underline;
 }
 
 /* RESET / BASE */

@@ -48,6 +48,103 @@
   text-decoration: underline;
 }
 
+/* bottom tiles */
+.hero-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-height: 220px;
+}
+
+/* base style for all tiles */
+.hero-tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #fff;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+/* background image + cover */
+.hero-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* color overlay */
+.hero-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  mix-blend-mode: multiply;
+  opacity: 0.9;           /* adjust to taste */
+  z-index: 1;
+}
+
+/* text on top */
+.hero-tile span {
+  position: relative;
+  z-index: 2;
+  line-height: 1.2;
+}
+
+/* individual tiles: set image + overlay color */
+
+/* End Products – blue */
+.tile-end-products::before {
+  background-image: url("assets/home/end-products.jpg");
+}
+.tile-end-products::after {
+  background-color: #00429b;
+}
+
+/* End Users – yellow/orange */
+.tile-end-users::before {
+  background-image: url("assets/home/end-users.jpg");
+}
+.tile-end-users::after {
+  background-color: #f2b800;
+}
+
+/* Research & Development – red */
+.tile-rnd::before {
+  background-image: url("assets/home/research-dev.jpg");
+}
+.tile-rnd::after {
+  background-color: #c5001a;
+}
+
+/* Production Capabilities – green */
+.tile-production::before {
+  background-image: url("assets/home/production.jpg");
+}
+.tile-production::after {
+  background-color: #058a35;
+}
+
+/* responsive layout */
+@media (max-width: 720px) {
+  .hero-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* RESET / BASE */
 *,
 *::before,

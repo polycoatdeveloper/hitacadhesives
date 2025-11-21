@@ -108,7 +108,7 @@ $(document).ready(function(){
   
   </head>
 <body>
-	<header class="hitac-header">
+<header class="hitac-header">
   <div class="hitac-header-inner">
     <!-- Logo -->
     <a href="#top" class="hitac-logo-wrap">
@@ -126,41 +126,50 @@ $(document).ready(function(){
     </nav>
   </div>
 </header>
+	
+<!-- HERO MEDIA + TILES -->
+<section id="home" class="hitac-hero">
 
-<div class="container-fluid" >
-<div class="row">
-<div class="header_container">
-<div class="main_container">
-<div class="row">
-<div class="col-sm-3"><a href="index.php" class="logo"></a></div>
-<div class="col-sm-9">
-<div class="menu_bar">
-<nav>
-          <ul class="nav nav-justified">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="solutions.php">solutions</a></li>
-            <li><a href="about.php">about</a></li>
-            <li><a href="contact.php">contact</a></li>
-            <li><a href="brochures.php">brochures</a></li>
-            <li><a href="tech_datasheets.php">Tech Datasheet</a></li>
-          </ul>
-        </nav>
-        
-        </div>
-        <div class="mbl_nav">
-        <ul id="menu">
-    		<li><a href="index.php">Home</a></li>
-            <li><a href="solutions.php">solutions</a></li>
-            <li><a href="about.php">about</a></li>
-            <li><a href="contact.php">contact</a></li>
-            <li><a href="brochures.php">brochures</a></li>
-            <li><a href="tech_datasheets.php">Tech Datasheet</a></li>
-		</ul>
-        </div>
-</div>
-</div>
-</div>
-</div>
+  <!-- Top row: video + image -->
+  <div class="hero-top">
+    <!-- LEFT: YouTube video -->
+    <div class="hero-video">
+      <div class="video-wrapper">
+        <!-- Replace VIDEO_ID with your actual YouTube id -->
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          title="HiTAC Story 2018"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <!-- RIGHT: hero image -->
+    <div class="hero-side-image">
+      <!-- replace with your real image path -->
+      <img src="assets/home/top-img.jpg" alt="HiTAC hero image">
+    </div>
+  </div>
+
+  <!-- Bottom row: 4 colored tiles -->
+  <div class="hero-bottom">
+   	  <a href="#end-products" class="hero-tile tile-blue">
+      <span>End<br>Products</span>
+    </a>
+    <a href="#end-users" class="hero-tile tile-yellow">
+      <span>End<br>Users</span>
+    </a>
+    <a href="#rnd" class="hero-tile tile-red">
+      <span>Research<br>&amp;<br>Development</span>
+    </a>
+    <a href="#production" class="hero-tile tile-green">
+      <span>Production<br>Capabilities</span>
+    </a>
+  </div>
+</section>
+
 <div class="top_img">
 <div class="my_video">
 <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 640px;

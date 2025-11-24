@@ -278,3 +278,67 @@
     height: 240px;
   }
 }
+/* === HITAC REINVENTED BAND (MATCHES CURRENT HTML) === */
+
+.hitac-reinvented {
+  background: #ffffff !important;
+  padding: 3rem 1.5rem !important;
+}
+
+.hitac-reinvented .reinvented-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Red heading (your plain <h2>) */
+.hitac-reinvented h2 {
+  margin: 0 0 1.5rem !important;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  color: #e02424 !important;        /* red title */
+  font-family: 'Oswald', Arial, sans-serif !important;
+}
+
+/* Main bullet list */
+.hitac-reinvented .reinvented-list {
+  list-style: none !important;      /* remove default bullets */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.hitac-reinvented .reinvented-list li {
+  position: relative;
+  margin: 0.75rem 0 !important;
+  padding: 0 1.5rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  color: #20499a !important;        /* same blue as header */
+  text-transform: uppercase !important;
+  font-family: 'Oswald', Arial, sans-serif !important;
+}
+
+/* Blue square bullet on left edge */
+.hitac-reinvented .reinvented-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #20499a;
+}
+
+/* Smaller on mobile */
+@media (max-width: 768px) {
+  .hitac-reinvented h2 {
+    font-size: 1.6rem !important;
+  }
+  .hitac-reinvented .reinvented-list li {
+    font-size: 1.2rem !important;
+  }
+}
+

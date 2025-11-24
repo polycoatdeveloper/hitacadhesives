@@ -342,3 +342,76 @@
   }
 }
 
+/* === HITAC STORY HERO (FULL-WIDTH IMAGE BAND) === */
+
+.hitac-story-hero {
+  position: relative;
+  min-height: 480px; /* tweak height to taste */
+  background-image: url("assets/home/story-hero.jpg"); /* your image here */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  color: #ffffff;
+}
+
+/* dark overlay */
+.hitac-story-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); /* darken the photo */
+}
+
+/* inner content sits above overlay */
+.story-hero-inner {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* big title */
+.story-hero-title {
+  margin: 0 0 1.5rem;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* body lines */
+.story-hero-text {
+  margin: 0.5rem 0;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+/* responsive tweaks */
+@media (max-width: 992px) {
+  .story-hero-title {
+    font-size: 2.2rem;
+  }
+  .story-hero-text {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hitac-story-hero {
+    min-height: 380px;
+    padding: 3rem 1rem;
+  }
+  .story-hero-title {
+    font-size: 1.8rem;
+  }
+  .story-hero-text {
+    font-size: 1.1rem;
+  }
+}

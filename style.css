@@ -211,6 +211,68 @@
   .video-wrapper {
     height: 240px;        /* smaller video on mobile */
   }
+  /* === HITAC REINVENTED BAND === */
+
+.hitac-reinvented {
+  background: #ffffff;
+  padding: 3rem 1.5rem;
+}
+
+.reinvented-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Red heading */
+.reinvented-inner h2 {
+  margin: 0 0 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #e02424; /* tweak if you want a different red */
+}
+
+/* Main bullet list */
+.reinvented-list {
+  list-style: none;       /* we’ll draw our own bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.reinvented-list li {
+  position: relative;
+  margin: 0.75rem 0;
+  padding: 0 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #20499a;         /* same blue as header */
+  text-transform: uppercase;
+}
+
+/* Blue square bullet on left */
+.reinvented-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;               /* pushed to the left side of the band */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background: #20499a;
+}
+
+/* Make text a bit smaller on small screens */
+@media (max-width: 768px) {
+  .reinvented-inner h2 {
+    font-size: 1.6rem;
+  }
+  .reinvented-list li {
+    font-size: 1.2rem;
+  }
+}
+
 
   .hero-side-image {
     height: 240px;

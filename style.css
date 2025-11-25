@@ -33,7 +33,7 @@
 
 .product-card {
   background-color: #3a6cb6; /* Lighter blue background for cards */
-  color: #fff;
+  color: #fff; /* White text color for the entire card */
   padding: 25px;
   border-radius: 8px; /* Rounded corners for the product cards */
   width: 280px; /* Set width for the product cards */
@@ -58,7 +58,7 @@
 }
 
 .read-more {
-  color: #fff;
+  color: #fff; /* White color for text inside the button */
   font-size: 14px;
   text-decoration: none;
   padding: 12px 20px; /* Larger padding for the button */

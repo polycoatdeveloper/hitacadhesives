@@ -42,19 +42,16 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 
-.product-card:hover {
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
-
 .product-card h2 {
   font-size: 24px; /* Larger font size for product titles */
   margin-bottom: 15px;
+  color: #fff; /* Ensure product titles are white */
 }
 
 .product-card p {
   font-size: 16px;
   margin-bottom: 20px; /* Space below the description */
+  color: #fff; /* Ensure description text is white */
 }
 
 .read-more {

@@ -1,4 +1,5 @@
 :root { /* Tweak this to match your exact blue */ --hitac-blue-header: #20499a; } /* Full-width blue bar */ .hitac-header { background: var(--hitac-blue-header); } /* Inner flex layout */ .hitac-header-inner { max-width: 1100px; margin: 0 auto; padding: 0.5rem 1.5rem; display: flex; align-items: center; } /* Logo */ .hitac-logo-wrap { display: inline-flex; align-items: center; margin-right: 2rem; } .hitac-logo { height: 52px; /* adjust to taste */ width: auto; } /* Navigation links */ .hitac-nav { display: flex; flex: 1; justify-content: space-evenly; /* spreads links across bar */ } .hitac-nav a { color: #ffffff; text-decoration: none; font-weight: 700; font-size: 1rem; letter-spacing: 0.03em; white-space: nowrap; } .hitac-nav a:hover { text-decoration: underline; } /* === HERO SECTION === */ .hitac-hero { background: #ffffff; } /* top row: video + right image */ .hero-top { display: flex; flex-wrap: nowrap; height: 420px; /* adjust: 380–450px to taste */ } /* Left side: video fills its half */ .hero-video { flex: 2; min-width: 0; /* prevents overflow */ height: 100%; /* <<< FORCE same height as hero-top */ } .video-wrapper { position: relative; width: 100%; height: 100%; /* fill the full 420px height */ padding-top: 0; /* REMOVE the old 56.25% padding */ } .video-wrapper iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; } /* Right side: image fills its half */ .hero-side-image { flex: 1; min-width: 0; height: 100%; /* <<< MATCH hero-top height */ } .hero-side-image img { width: 100%; height: 100%; object-fit: cover; /* crop image nicely */ display: block; } /* bottom tiles grid */ .hero-bottom { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); min-height: 220px; } /* base tile style */ .hero-tile { position: relative; display: flex; align-items: center; justify-content: center; text-align: center; text-decoration: none; font-weight: 700; font-size: 1.7rem; color: #fff; padding: 1rem; overflow: hidden; } /* background image layer */ .hero-tile::before { content: ""; position: absolute; inset: 0; background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 0; } /* color overlay layer */ .hero-tile::after { content: ""; position: absolute; inset: 0; background-color: rgba(0, 0, 0, 0.4); /* fallback */ mix-blend-mode: multiply; opacity: 0.9; z-index: 1; } /* text on top */ .hero-tile span { position: relative; z-index: 2; line-height: 1.2; } /* individual tiles: set images + overlay colors */ /* End Products – blue */ .tile-end-products::before { background-image: url("assets/home/end-products.jpg"); } .tile-end-products::after { background-color: #00429b; } /* End Users – yellow/orange */ .tile-end-users::before { background-image: url("assets/home/end-users.jpg"); } .tile-end-users::after { background-color: #f2b800; } /* Research & Development – red */ .tile-rnd::before { background-image: url("assets/home/research-dev.jpg"); } .tile-rnd::after { background-color: #c5001a; } /* Production Capabilities – green */ .tile-production::before { background-image: url("assets/home/production.jpg"); } .tile-production::after { background-color: #058a35; } /* responsive tweaks */ @media (max-width: 900px) { .hero-top { flex-direction: column; } } @media (max-width: 720px) { .hero-bottom { grid-template-columns: repeat(2, minmax(0, 1fr)); } } @media (max-width: 480px) { .hero-bottom { grid-template-columns: 1fr; } } @media (max-width: 768px) { .hero-top { flex-direction: column; height: auto; /* let it stack naturally on mobile */ } .video-wrapper { height: 240px; /* smaller video on mobile */ } /* === HITAC REINVENTED BAND === */ .hitac-reinvented { background: #ffffff; padding: 3rem 1.5rem; } .reinvented-inner { max-width: 1100px; margin: 0 auto; text-align: center; } /* Red heading */ .reinvented-inner h2 { margin: 0 0 1.5rem; font-size: 2rem; font-weight: 700; letter-spacing: 0.06em; color: #e02424; /* tweak if you want a different red */ } /* Main bullet list */ .reinvented-list { list-style: none; /* we’ll draw our own bullets */ margin: 0; padding: 0; } .reinvented-list li { position: relative; margin: 0.75rem 0; padding: 0 1.5rem; font-size: 1.5rem; font-weight: 700; letter-spacing: 0.04em; color: #20499a; /* same blue as header */ text-transform: uppercase; } /* Blue square bullet on left */ .reinvented-list li::before { content: ""; position: absolute; left: 0; /* pushed to the left side of the band */ top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #20499a; } /* Make text a bit smaller on small screens */ @media (max-width: 768px) { .reinvented-inner h2 { font-size: 1.6rem; } .reinvented-list li { font-size: 1.2rem; } } .hero-side-image { height: 240px; } } /* === HITAC REINVENTED BAND (MATCHES CURRENT HTML) === */ .hitac-reinvented { background: #ffffff !important; padding: 3rem 1.5rem !important; } .hitac-reinvented .reinvented-inner { max-width: 1100px; margin: 0 auto; text-align: center; } /* Red heading (your plain <h2>) */ .hitac-reinvented h2 { margin: 0 0 1.5rem !important; font-size: 2rem !important; font-weight: 700 !important; letter-spacing: 0.06em !important; color: #e02424 !important; /* red title */ font-family: 'Oswald', Arial, sans-serif !important; } /* Main bullet list */ .hitac-reinvented .reinvented-list { list-style: none !important; /* remove default bullets */ margin: 0 !important; padding: 0 !important; } .hitac-reinvented .reinvented-list li { position: relative; margin: 0.75rem 0 !important; padding: 0 1.5rem !important; font-size: 1.5rem !important; font-weight: 700 !important; letter-spacing: 0.04em !important; color: #20499a !important; /* same blue as header */ text-transform: uppercase !important; font-family: 'Oswald', Arial, sans-serif !important; } /* Blue square bullet on left edge */ .hitac-reinvented .reinvented-list li::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 10px; height: 10px; background: #20499a; } /* Smaller on mobile */ @media (max-width: 768px) { .hitac-reinvented h2 { font-size: 1.6rem !important; } .hitac-reinvented .reinvented-list li { font-size: 1.2rem !important; } } /* === HITAC STORY HERO (FULL-WIDTH IMAGE BAND) === */ .hitac-story-hero { position: relative; min-height: 480px; /* tweak height to taste */ background-image: url("assets/home/story-hero.jpg"); /* your image here */ background-size: cover; background-position: center center; background-repeat: no-repeat; display: flex; align-items: center; justify-content: center; text-align: center; padding: 4rem 1.5rem; color: #ffffff; } /* dark overlay */ .hitac-story-hero::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, 0.45); /* darken the photo */ } /* inner content sits above overlay */ .story-hero-inner { position: relative; max-width: 1100px; margin: 0 auto; } /* big title */ .story-hero-title { margin: 0 0 1.5rem; font-family: 'Oswald', Arial, sans-serif; font-size: 2.8rem; line-height: 1.1; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; } /* body lines */ .story-hero-text { margin: 0.5rem 0; font-family: 'Oswald', Arial, sans-serif; font-size: 1.6rem; line-height: 1.4; } /* responsive tweaks */ @media (max-width: 992px) { .story-hero-title { font-size: 2.2rem; } .story-hero-text { font-size: 1.3rem; } } @media (max-width: 600px) { .hitac-story-hero { min-height: 380px; padding: 3rem 1rem; } .story-hero-title { font-size: 1.8rem; } .story-hero-text { font-size: 1.1rem; } } /* === HITAC ADHESIVES AND COATINGS === */
+
 /* === HITAC ADHESIVES AND COATINGS === */
 .adhesives-coatings {
   background-color: #fff;
@@ -26,9 +27,11 @@
 /* Adjusting product cards layout */
 .product-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Space between cards */
   gap: 30px; /* Space between product cards */
-  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  max-width: 900px; /* Optional: maximum width for content */
+  margin: 0 auto; /* Center the product cards */
 }
 
 .product-card {
@@ -36,7 +39,7 @@
   color: #fff; /* White text color for the entire card */
   padding: 25px;
   border-radius: 8px; /* Rounded corners for the product cards */
-  width: 280px; /* Set width for the product cards */
+  width: 45%; /* Width of each card set to 45% to fit two in a row */
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
@@ -45,13 +48,11 @@
 .product-card h2 {
   font-size: 24px; /* Larger font size for product titles */
   margin-bottom: 15px;
-  color: #fff; /* Ensure product titles are white */
 }
 
 .product-card p {
   font-size: 16px;
   margin-bottom: 20px; /* Space below the description */
-  color: #fff; /* Ensure description text is white */
 }
 
 .read-more {
@@ -72,7 +73,7 @@
 /* Mobile compatibility */
 @media (max-width: 768px) {
   .product-cards {
-    flex-direction: column;
+    flex-direction: column; /* Stack cards vertically on mobile */
     gap: 20px; /* Smaller gap between the cards on mobile */
   }
 

@@ -24,11 +24,10 @@
   margin-bottom: 40px; /* Space below the description text */
 }
 
-/* Adjusting product cards layout using flex */
+/* Adjusting product cards layout using CSS Grid */
 .product-cards {
-  display: flex;
-  flex-wrap: wrap; /* Allow cards to wrap to the next row */
-  justify-content: space-between; /* Space between cards */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
   gap: 30px; /* Space between product cards */
   max-width: 1200px; /* Optional: maximum width for content */
   margin: 0 auto; /* Center the product cards */
@@ -42,7 +41,6 @@
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-  width: 32%; /* Set each card to take up approximately 32% of the container width (3 in a row) */
 }
 
 .product-card h2 {
@@ -73,23 +71,14 @@
 /* Mobile compatibility */
 @media (max-width: 768px) {
   .product-cards {
-    flex-direction: column; /* Stack cards vertically on mobile */
+    grid-template-columns: repeat(2, 1fr); /* For smaller screens, display 2 items per row */
     gap: 20px; /* Smaller gap between the cards on mobile */
-  }
-  
-  .product-card {
-    width: 100%; /* Full width for product cards on mobile */
-    margin-bottom: 20px; /* Space between stacked cards */
   }
 }
 
 @media (max-width: 480px) {
   .product-cards {
-    flex-direction: column; /* Stack cards vertically on very small screens */
+    grid-template-columns: 1fr; /* For very small screens, display 1 item per row */
     gap: 10px; /* Even smaller gap on very small screens */
-  }
-  
-  .product-card {
-    width: 100%; /* Full width for product cards */
   }
 }

@@ -42,7 +42,7 @@
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-  width: 30%; /* Set each card to take up 30% of the container width (for 3 columns) */
+  width: 32%; /* Set each card to take up approximately 32% of the container width (3 in a row) */
 }
 
 .product-card h2 {

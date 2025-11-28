@@ -51,6 +51,7 @@
 .product-card p {
   font-size: 16px;
   margin-bottom: 20px; /* Space below the description */
+    color: #fff; /* Ensure the text is white */
 }
 
 .read-more {

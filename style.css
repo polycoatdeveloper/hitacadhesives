@@ -83,3 +83,102 @@
     gap: 10px; /* Even smaller gap on very small screens */
   }
 }
+/* FOOTER BASE */
+.site-footer {
+  background-color: #1e4595;      /* blue background */
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  padding: 20px 40px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.footer-left {
+  line-height: 1.4;
+}
+
+.footer-company {
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.footer-copy {
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+/* RIGHT SIDE NAV */
+.footer-right {
+  text-align: right;
+  flex: 1;
+}
+
+.footer-menu,
+.footer-submenu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.footer-submenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* LINKS */
+.footer-menu a,
+.footer-submenu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;       /* big text like screenshot */
+  letter-spacing: 0.02em;
+}
+
+.footer-submenu a {
+  font-size: 22px;       /* slightly larger for the center line */
+}
+
+/* Hover effect (optional) */
+.footer-menu a:hover,
+.footer-submenu a:hover {
+  text-decoration: underline;
+}
+
+/* SIMPLE RESPONSIVE ADJUSTMENT */
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+
+  .footer-menu,
+  .footer-submenu {
+    justify-content: flex-start;
+  }
+}

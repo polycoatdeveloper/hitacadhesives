@@ -28,6 +28,7 @@
 .product-cards {
   display: flex;
   justify-content: space-between; /* Space between cards */
+  grid-template-columns: repeat(3, 1fr); /* Creates three equal-width columns */
   gap: 30px; /* Space between product cards */
   flex-wrap: wrap; /* Allow cards to wrap to the next row */
   max-width: 900px; /* Optional: maximum width for content */
@@ -74,9 +75,14 @@
 @media (max-width: 768px) {
   .product-cards {
     flex-direction: column; /* Stack cards vertically on mobile */
+    grid-template-columns: repeat(2, 1fr); /* For smaller screens, display 2 items per row */
     gap: 20px; /* Smaller gap between the cards on mobile */
   }
-
+@media (max-width: 480px) {
+  .product-cards {
+    grid-template-columns: 1fr; /* For very small screens, display 1 item per row */
+  }
+}
   .product-card {
     width: 100%; /* Full width for product cards on mobile */
     margin-bottom: 20px; /* Space between stacked cards */

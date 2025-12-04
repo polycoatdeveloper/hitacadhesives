@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META -->
+  <meta charset="utf-8" />
+  <title>End Users | HITAC Adhesives &amp; Coatings</title>
+  <meta name="description"
+        content="End user applications for HITAC release agents and coatings." />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi" />
+
+  <!-- CSS -->
+  <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="slicknav.css" rel="stylesheet" type="text/css" />
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap"
+        rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
+        rel="stylesheet" />
+
+  <!-- (Optional) Google Analytics – copy your GA snippet here if you want tracking -->
+</head>
+<body>
+
+  <!-- HEADER (loaded from header.html) -->
+  <div id="header-placeholder"></div>
+
+  <main class="endusers-page">
+    <div class="endusers-inner">
+      <h1 class="endusers-title">End Users</h1>
+
+      <section class="endusers-gallery">
+        <div class="endusers-gallery-inner">
+
+          <!-- Update src paths to your real images -->
+          <div class="endusers-photo">
+            <img src="assets/end_users/enduser1.jpg"
+                 alt="End users packing boxes with tape" />
+          </div>
+
+          <div class="endusers-photo">
+            <img src="assets/end_users/enduser2.jpg"
+                 alt="Woman using tape for packaging" />
+          </div>
+
+          <div class="endusers-photo">
+            <img src="assets/end_users/enduser3.jpg"
+                 alt="Packaging line with taped boxes" />
+          </div>
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER (loaded from footer.html) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Load shared header & footer -->
+  <script>
+    // Load header.html into the placeholder
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading header:', err));
+
+    // Load footer.html into the placeholder
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading footer:', err));
+  </script>
+</body>
+</html>

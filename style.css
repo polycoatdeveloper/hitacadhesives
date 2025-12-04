@@ -518,3 +518,72 @@
     font-size: 18px;
   }
 }
+
+/* ==========================================================================
+   TECH DATASHEETS PAGE
+   ========================================================================== */
+
+.tech-page {
+  background-color: #ffffff;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: #111;
+  padding: 40px 0 60px;
+}
+
+.tech-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.tech-title {
+  font-size: 46px;
+  font-weight: 400;
+  margin: 10px 0 30px;
+}
+
+/* 3-column grid */
+.tech-grid {
+  display: flex;
+  gap: 60px;
+}
+
+.tech-col {
+  flex: 1;
+}
+
+/* links */
+.tech-link {
+  display: block;
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #1e4595; /* blue like your other links */
+}
+
+.tech-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .tech-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .tech-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tech-title {
+    font-size: 32px;
+  }
+
+  .tech-link {
+    font-size: 16px;
+  }
+}

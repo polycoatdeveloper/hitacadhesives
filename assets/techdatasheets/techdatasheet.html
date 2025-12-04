@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META -->
+  <meta charset="utf-8" />
+  <title>Technical DataSheets | HITAC Adhesives &amp; Coatings</title>
+  <meta name="description"
+        content="Download technical data sheets for HITAC release agent products." />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi" />
+
+  <!-- CSS -->
+  <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="slicknav.css" rel="stylesheet" type="text/css" />
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap"
+        rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
+        rel="stylesheet" />
+
+  <!-- (Optional) Google Analytics – copy your GA snippet here if you want tracking -->
+</head>
+<body>
+
+  <!-- HEADER (loaded from header.html) -->
+  <div id="header-placeholder"></div>
+
+  <main class="tech-page">
+    <div class="tech-inner">
+
+      <!-- Title -->
+      <h1 class="tech-title">Technical DataSheets</h1>
+
+      <!-- 3-column list of links -->
+      <section class="tech-grid">
+
+        <!-- COLUMN 1 -->
+        <div class="tech-col">
+          <a href="assets/techdatasheets/HITAC-TDS-2016-0419_RA-13W-SC.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-13W Tech Data Sheet
+          </a>
+
+          <a href="assets/techdatasheets/HITAC-TDS-2016-0420_RA-21S-sc.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-21S Tech Data Sheet
+          </a>
+
+          <a href="assets/techdatasheets/HITAC-TDS-2017-0505_RA-21S-T.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-21S-T Tech Data Sheet
+          </a>
+
+          <!-- Note the encoded space in the filename -->
+          <a href="assets/techdatasheets/HITAC-TDS-2017-0911_RA-33%20Preliminary.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-33 Preliminary Tech Data Sheet
+          </a>
+        </div>
+
+        <!-- COLUMN 2 -->
+        <div class="tech-col">
+          <a href="assets/techdatasheets/HITAC-TDS-2016-0420_RA-15W-SC.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-15W Tech Data Sheet
+          </a>
+
+          <a href="assets/techdatasheets/HITAC-TDS-2016-0627_RA-23S-Web.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-23S Tech Data Sheet
+          </a>
+
+          <a href="assets/techdatasheets/HITAC-TDS-2017-0506_RA-23S-T.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-23S-T Tech Data Sheet
+          </a>
+        </div>
+
+        <!-- COLUMN 3 -->
+        <div class="tech-col">
+          <a href="assets/techdatasheets/HITAC-TDS-2016-1212_RA-42W-web.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-42W Tech Data Sheet
+          </a>
+
+          <a href="assets/techdatasheets/HITAC-TDS-2016-1212_RA-44W.pdf"
+             class="tech-link" target="_blank" rel="noopener">
+            HITAC RA-44W Tech Data Sheet
+          </a>
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- FOOTER (loaded from footer.html) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Load shared header & footer -->
+  <script>
+    // Load header.html into the placeholder
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading header:', err));
+
+    // Load footer.html into the placeholder
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading footer:', err));
+  </script>
+</body>
+</html>

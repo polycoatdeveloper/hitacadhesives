@@ -19,7 +19,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
         rel="stylesheet" />
 
-  <!-- (Optional) Google Analytics – copy from index.html if you want tracking here too -->
+  <!-- (Optional) Google Analytics – copy your GA snippet here if desired -->
 </head>
 <body>
 
@@ -66,3 +66,49 @@
             <li>Effective release in a variety of pressure sensitive tapes where the adhesive is based on SIS block copolymers, SBR, natural rubber, and solvent-based acrylics</li>
             <li>Effective release in OPP packaging tapes, polyethylene-backed diaper fastening tapes, vinyl and filament tape construction</li>
             <li>Delivered at 28% Total Solids</li>
+          </ul>
+        </article>
+
+        <!-- RIGHT COLUMN: IMAGE + CAPTION -->
+        <aside class="solution-image-wrap">
+          <div class="solution-image-frame">
+            <!-- use your actual image path -->
+            <img src="assets/solutions/filament-tape.jpg"
+                 alt="HITAC waterbased release agents on filament tape" />
+          </div>
+
+          <div class="solution-image-caption">
+            <p class="caption-heading">HITAC WATERBASED RELEASE AGENTS</p>
+            <p class="caption-subheading">RA-13W, RA-15W, AND RA-42W</p>
+            <p>Canadian Patent No. 2446495</p>
+            <p>European Patent No. EP1397245</p>
+          </div>
+        </aside>
+
+      </div><!-- /.solutions-layout -->
+    </div><!-- /.solutions-inner -->
+  </main>
+
+  <!-- FOOTER (loaded from footer.html) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Load shared header & footer -->
+  <script>
+    // Load header.html into the placeholder
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading header:', err));
+
+    // Load footer.html into the placeholder
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading footer:', err));
+  </script>
+</body>
+</html>

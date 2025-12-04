@@ -663,3 +663,79 @@
     font-size: 32px;
   }
 }
+
+/* ==========================================================================
+   END PRODUCTS PAGE (3-IMAGE LAYOUT)
+   ========================================================================== */
+
+.endproducts-page {
+  background-color: #ffffff;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: #111;
+  padding: 40px 0 60px;
+}
+
+.endproducts-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.endproducts-title {
+  font-size: 46px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+/* Gallery wrapper */
+.endproducts-gallery {
+  margin-bottom: 40px;
+}
+
+.endproducts-gallery-inner {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Each photo frame */
+.endproducts-photo {
+  flex: 1;
+  border: 1px solid #d3d3d3;
+  background: #ffffff;
+  overflow: hidden;
+  height: 360px;          /* keeps all 3 aligned like your screenshot */
+}
+
+.endproducts-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .endproducts-gallery-inner {
+    flex-direction: column;
+  }
+
+  .endproducts-photo {
+    height: auto;
+  }
+
+  .endproducts-photo img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .endproducts-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .endproducts-title {
+    font-size: 32px;
+  }
+}

@@ -416,3 +416,105 @@
     font-size: 32px;
   }
 }
+
+/* ==========================================================================
+   BROCHURES PAGE
+   ========================================================================== */
+
+.brochures-page {
+  background-color: #ffffff;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: #111;
+  padding: 40px 0 60px;
+}
+
+.brochures-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Title */
+.brochures-header-row {
+  margin-bottom: 10px;
+}
+
+.brochures-title {
+  font-size: 46px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+/* Centered download link */
+.brochures-link-row {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.brochures-download {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 22px;
+  text-decoration: none;
+  color: #1e4595; /* same blue as header */
+}
+
+.brochures-download:hover {
+  text-decoration: underline;
+}
+
+/* Gallery */
+.brochures-gallery {
+  margin-bottom: 40px;
+}
+
+.brochures-gallery-inner {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Each photo card */
+.brochures-photo {
+  flex: 1;
+  border: 1px solid #d3d3d3;
+  background: #ffffff;
+  overflow: hidden;
+  height: 360px;            /* fixed height so all align like screenshot */
+}
+
+.brochures-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;        /* fill card and keep alignment */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .brochures-gallery-inner {
+    flex-direction: column;
+  }
+
+  .brochures-photo {
+    height: auto;
+  }
+
+  .brochures-photo img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .brochures-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .brochures-title {
+    font-size: 32px;
+  }
+
+  .brochures-download {
+    font-size: 18px;
+  }
+}

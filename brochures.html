@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- META -->
+  <meta charset="utf-8" />
+  <title>Brochures | HITAC Adhesives &amp; Coatings</title>
+  <meta name="description"
+        content="Download HITAC Adhesives & Coatings product brochures and learn more about our release agent technologies." />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi" />
+
+  <!-- CSS -->
+  <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="slicknav.css" rel="stylesheet" type="text/css" />
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700&display=swap"
+        rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap"
+        rel="stylesheet" />
+
+  <!-- (Optional) Google Analytics – copy your GA snippet here if you want tracking -->
+</head>
+<body>
+
+  <!-- HEADER (loaded from header.html) -->
+  <div id="header-placeholder"></div>
+
+  <main class="brochures-page">
+    <div class="brochures-inner">
+
+      <!-- Title row -->
+      <div class="brochures-header-row">
+        <h1 class="brochures-title">Hitac Products Brochures</h1>
+      </div>
+
+      <!-- Centered brochure download link -->
+      <div class="brochures-link-row">
+        <!-- replace brochure.pdf with your real brochure file -->
+        <a href="brochure.pdf" class="brochures-download" target="_blank" rel="noopener">
+          Download HiTac Products Brochure
+        </a>
+      </div>
+
+      <!-- Image gallery -->
+      <section class="brochures-gallery">
+        <div class="brochures-gallery-inner">
+
+          <div class="brochures-photo">
+            <!-- update image paths to your real files -->
+            <img src="assets/brochures/brochure1.jpg"
+                 alt="Hitac tape products" />
+          </div>
+
+          <div class="brochures-photo">
+            <img src="assets/brochures/brochure2.jpg"
+                 alt="Hitac lab and testing" />
+          </div>
+
+          <div class="brochures-photo">
+            <img src="assets/brochures/brochure3.jpg"
+                 alt="Hitac laboratory and production" />
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER (loaded from footer.html) -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Load shared header & footer -->
+  <script>
+    // Load header.html into the placeholder
+    fetch('header.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('header-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading header:', err));
+
+    // Load footer.html into the placeholder
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(err => console.error('Error loading footer:', err));
+  </script>
+</body>
+</html>

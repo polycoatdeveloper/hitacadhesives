@@ -739,3 +739,80 @@
     font-size: 32px;
   }
 }
+
+
+/* ==========================================================================
+   RESEARCH & DEVELOPMENT PAGE (3-IMAGE LAYOUT)
+   ========================================================================== */
+
+.rnd-page {
+  background-color: #ffffff;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: #111;
+  padding: 40px 0 60px;
+}
+
+.rnd-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.rnd-title {
+  font-size: 46px;
+  font-weight: 400;
+  margin: 10px 0 20px;
+}
+
+/* Gallery wrapper */
+.rnd-gallery {
+  margin-bottom: 40px;
+}
+
+.rnd-gallery-inner {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Each photo frame */
+.rnd-photo {
+  flex: 1;
+  border: 1px solid #d3d3d3;
+  background: #ffffff;
+  overflow: hidden;
+  height: 360px;          /* aligns all three like your screenshot */
+}
+
+.rnd-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .rnd-gallery-inner {
+    flex-direction: column;
+  }
+
+  .rnd-photo {
+    height: auto;
+  }
+
+  .rnd-photo img {
+    height: auto;
+    object-fit: contain;
+  }
+
+  .rnd-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 600px) {
+  .rnd-title {
+    font-size: 32px;
+  }
+}

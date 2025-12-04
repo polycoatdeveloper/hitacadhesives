@@ -208,20 +208,31 @@
 }
 
 /* ---------------------------------------
-   MAIN 3-COLUMN LAYOUT
+   MAIN FLEX LAYOUT
    --------------------------------------- */
+
 .solutions-layout {
   display: flex;
   gap: 40px;
   align-items: flex-start;
 }
 
+/* extra vertical spacing between rows */
+.solutions-row-2 {
+  margin-top: 40px;
+}
+
+.solutions-row-3 {
+  margin-top: 40px;
+}
+
 /* ---------------------------------------
-   LEFT & CENTER TEXT COLUMNS
+   TEXT COLUMNS
    --------------------------------------- */
+
 .solution-col {
   flex: 1;
-  min-width: 0; /* avoids overflow on smaller monitors */
+  min-width: 0; /* avoid overflow on narrow screens */
 }
 
 .solution-name {
@@ -231,11 +242,12 @@
 }
 
 .solution-patent {
-  color: #e63323;         /* RED */
+  color: #e63323; /* red accent */
   font-size: 16px;
   margin-bottom: 15px;
 }
 
+/* bullet lists */
 .solution-list {
   list-style: disc;
   padding-left: 22px;
@@ -244,9 +256,18 @@
   line-height: 1.6;
 }
 
+/* paragraph style body text (used for RA-23S description) */
+.solution-body {
+  font-family: 'Raleway', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
 /* ---------------------------------------
-   RIGHT IMAGE PANEL
+   IMAGE PANEL (RIGHT COLUMN)
    --------------------------------------- */
+
 .solution-image-wrap {
   flex: 1;
   text-align: center;
@@ -266,9 +287,7 @@
   display: block;
 }
 
-/* ---------------------------------------
-   IMAGE CAPTION (RED TEXT)
-   --------------------------------------- */
+/* caption under image */
 .solution-image-caption {
   color: #e63323;
   font-size: 20px;
@@ -291,7 +310,7 @@
 }
 
 /* ---------------------------------------
-   RESPONSIVE STYLES
+   RESPONSIVE
    --------------------------------------- */
 
 @media (max-width: 992px) {
@@ -322,7 +341,3 @@
   }
 }
 
-  .solution-image-wrap {
-    margin-top: 20px;
-  }
-}
